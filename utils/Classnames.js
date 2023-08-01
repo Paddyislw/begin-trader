@@ -1,0 +1,1 @@
+export const layout = 'px-[6%] xl:px-[3%] lg:px-[2%] mb:px-4'
