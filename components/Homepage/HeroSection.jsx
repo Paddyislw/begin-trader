@@ -25,7 +25,7 @@ const HeroSection = () => {
             transformative journey with you, guiding you every step of the way
             on your path to becoming a successful trader.
           </p>
-          <button className="py-2 px-4 border rounded-lg flex mb:mx-auto animate-pop-in hero-btn">
+          <button className="py-2 px-4 border rounded-lg flex mb:mx-auto animate-pop-in hero-btn hover:scale-105">
             Get Started Today
           </button>
         </div>

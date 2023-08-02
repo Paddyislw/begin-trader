@@ -4,7 +4,6 @@ import { layout } from "@/utils/Classnames";
 import Image from "next/image";
 import React from "react";
 import testimonial from "../../mocks/testimonial.png";
-import wapp1 from "../../mocks/wapp1.jpg";
 import { useInView } from "react-intersection-observer";
 
 const TestimonialSection = () => {
@@ -23,7 +22,7 @@ const TestimonialSection = () => {
           Testimonial
         </p>
         <Heading
-          text={`Manage Your Finances From one Place `}
+          text={`Discover Real Stories of Success`}
           className={`${
             inView ? "animate-pop-in-down leafBox-2" : "notVisible"
           }`}
@@ -33,18 +32,18 @@ const TestimonialSection = () => {
             inView ? "animate-pop-in-down leafBox-3" : "notVisible"
           }`}
         >
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts. Separated they
-          live in Bookmarksgrove right at the coast of the Semantics
+          ❝ I must commend your accuracy on expiry day! The stock touched 360
+          and then surged to 400. Thanks to your guidance, I closed the trade
+          with a 30-point target. Impressive! ❞
         </p>
         <p
           className={`text-gray-300  ${
             inView ? "animate-pop-in-down leafBox-4" : "notVisible"
           }`}
         >
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts. Separated they
-          live in Bookmarksgrove right at the coast of the Semantics
+          ❝ Your trading signals are spot on! I followed your advice on a
+          volatile stock, and it hit the target price exactly as you predicted.
+          I managed to book a 20% profit within a short timeframe. Thank you! ❞
         </p>
         <button
           className={`text-gray-300 bg-primaryDark px-4 py-2 rounded-lg ${
@@ -58,7 +57,9 @@ const TestimonialSection = () => {
         <Image
           src={testimonial}
           alt="Image by Freepik"
-          className={`xl:w-[400px] h-[500px] lg:w-[350px] sm:w-[400px] mb:w-[360px] object-contain  ${inView ? "animate-scale isVisible " : "notVisible"}`}
+          className={`xl:w-[400px] h-[500px] lg:w-[350px] sm:w-[400px] mb:w-[360px] object-contain  ${
+            inView ? "animate-scale isVisible " : "notVisible"
+          }`}
         />
       </div>
     </div>

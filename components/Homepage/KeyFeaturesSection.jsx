@@ -5,6 +5,10 @@ import { layout } from "@/utils/Classnames";
 import Image from "next/image";
 import React from "react";
 import phone from "../../utils/svg/phone.svg";
+import innovative from "../../utils/icons/innovative.png";
+import assistance from "../../utils/icons/assistance.png";
+import team from "../../utils/icons/team.png";
+import calling from "../../utils/icons/calling.png";
 import { useInView } from "react-intersection-observer";
 
 const KeyFeaturesSection = () => {
@@ -65,7 +69,7 @@ const Card = ({ icon, text, className, inView }) => {
         src={icon}
         className="w-14 mx-auto bg-primaryLight rounded-t-full rounded-br-full p-2"
       />
-      <p className="text-lg text-primaryDark font-semibold text-center mb:text-base">
+      <p className="text-base text-primaryDark font-semibold text-center mb:text-base">
         {text}
       </p>
     </div>
@@ -74,17 +78,21 @@ const Card = ({ icon, text, className, inView }) => {
 
 const CardData = [
   {
-    icon: phone,
+    icon: innovative,
     text: "Innovative Solutions",
     className: "animate-scale leafBox-1",
   },
-  { icon: phone, text: "24/7 Support", className: "animate-scale leafBox-2" },
   {
-    icon: phone,
+    icon: assistance,
+    text: "Market Assistance",
+    className: "animate-scale leafBox-2",
+  },
+  {
+    icon: team,
     text: "Professional Team",
     className: "animate-scale leafBox-3",
   },
-  { icon: phone, text: "Fast Calling", className: "animate-scale leafBox-4" },
+  { icon: calling, text: "Fast Calling", className: "animate-scale leafBox-4" },
 ];
 
 export default KeyFeaturesSection;
