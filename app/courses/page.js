@@ -2,6 +2,7 @@ import FundamentalsCourse from "@/components/Courses/FundamentalsCourse";
 import OptionsCourse from "@/components/Courses/OptionsCourse";
 import Navbar from "@/global/Navbar";
 import { layout } from "@/utils/Classnames";
+import ServicesSection from '../../components/serviceSection/ServiceSection.jsx'
 import React from "react";
 
 const CoursePage = () => {
@@ -15,6 +16,7 @@ const CoursePage = () => {
       <div className="space-y-20">
         <FundamentalsCourse />
         <OptionsCourse />
+        <ServicesSection />
       </div>
     </div>
   );

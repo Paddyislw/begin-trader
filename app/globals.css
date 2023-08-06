@@ -2,6 +2,22 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
+/* .rounded-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid red
+} */
+/* .rounded-table th,
+.rounded-table td {
+  border: 1px solid #cbd5e0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.rounded-table th {
+  background-color: #f2f2f2;
+} */
+
 /* ^ Animation Pop in ^ */
 
 .animate-pop-in {

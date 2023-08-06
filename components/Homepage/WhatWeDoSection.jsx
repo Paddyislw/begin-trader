@@ -50,7 +50,7 @@ const WhatWeDoSection = () => {
             className={`rounded-b-[70px] rounded-tl-[70px] leafBox-1  ${
               inView ? "animate-scale isVisible " : "notVisible"
             }`}
-            heading={"18"}
+            heading={"3"}
             subHeading={"Years Experience"}
           />
           <LeafBox
