@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import testimonial from "../../mocks/testimonial.png";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 const TestimonialSection = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -45,13 +46,14 @@ const TestimonialSection = () => {
           volatile stock, and it hit the target price exactly as you predicted.
           I managed to book a 20% profit within a short timeframe. Thank you! ❞
         </p>
-        <button
-          className={`text-gray-300 bg-primaryDark px-4 py-2 rounded-lg ${
+        <Link
+          className={`text-gray-300 block w-fit bg-primaryDark px-4 py-2 rounded-lg ${
             inView ? "animate-pop-in-down leafBox-4" : "notVisible"
           }`}
+          href={'/testimonial'}
         >
           Testimonials
-        </button>
+        </Link>
       </div>
       <div className="flex">
         <Image

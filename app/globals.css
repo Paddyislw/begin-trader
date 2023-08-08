@@ -2,7 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
 /* .rounded-table {
   border-collapse: separate;
   border-spacing: 0;
@@ -17,6 +16,25 @@
 .rounded-table th {
   background-color: #f2f2f2;
 } */
+
+/* ^ Animate Dropdown  */
+.dropdown-content {
+  display: block;
+  animation: fadeInDown 0.5s ;
+  transform-origin: top center;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scaleY(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
 
 /* ^ Animation Pop in ^ */
 
@@ -99,8 +117,7 @@
     transform: none;
   }
 }
-
-
+/* ^ Animation Bottom Sliding Bar^ */
 .navBtn::after {
   content: "";
   width: 100%;
@@ -171,6 +188,11 @@
 .leafBox-5 {
   -webkit-animation-delay: 1.4s;
   animation-delay: 1.4s;
+}
+
+.leafBox-6 {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
 }
 
 .isVisible {

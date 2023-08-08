@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Hero2 from "../../utils/images/Hero2.png";
 import { layout } from "@/utils/Classnames";
+import whatsApp from "../../utils/svg/whatsAppWhite.svg";
 
 const HeroSection = () => {
   return (
@@ -25,9 +26,14 @@ const HeroSection = () => {
             transformative journey with you, guiding you every step of the way
             on your path to becoming a successful trader.
           </p>
-          <button className="py-2 px-4 border rounded-lg flex mb:mx-auto animate-pop-in hero-btn hover:scale-105">
-            Get Started Today
-          </button>
+          <a
+            className="py-2 px-4 border rounded-lg flex mb:mx-auto animate-pop-in hero-btn hover:scale-105 w-fit space-x-2"
+            href="https://api.whatsapp.com/send?phone=9629123326"
+            target="_blank"
+          >
+            <Image src={whatsApp} className="text-white" />
+            <p>Get Started Today</p>
+          </a>
         </div>
         <Image
           src={Hero2}
