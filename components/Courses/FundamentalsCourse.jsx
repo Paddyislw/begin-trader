@@ -4,15 +4,18 @@ import CourseSection from "@/global/CourseSection";
 
 const FundamentalsCourse = () => {
   return (
-    <CourseSection
-      heading={"Fundamentals of Stock Market"}
-      description={
-        " Welcome to 'Fundamentals of Stock Market' at Begin Trader! Our comprehensive course is designed to equip you with essential knowledge and skills to navigate the exciting world of the stock market. Whether you're a beginner or looking to enhance your trading expertise, this course has something to offer for everyone."
-      }
-      highlights={highlights}
-      cardImage={FundamentalStockMarket}
-      cardPoints={CardDetails}
-    />
+    <div className="mt-10">
+      <CourseSection
+        heading={"Fundamentals of Stock Market"}
+        description={
+          " Welcome to 'Fundamentals of Stock Market' at Begin Trader! Our comprehensive course is designed to equip you with essential knowledge and skills to navigate the exciting world of the stock market. Whether you're a beginner or looking to enhance your trading expertise, this course has something to offer for everyone."
+        }
+        highlights={highlights}
+        cardImage={FundamentalStockMarket}
+        cardPoints={CardDetails}
+        link="https://cosmofeed.com/vp/64d3298dd21eda001ea9c5ba"
+      />
+    </div>
   );
 };
 

@@ -14,6 +14,9 @@ const CourseSection = ({
   cardPoints,
   cardPrice,
   cardTitle,
+  type = "buy",
+  price,
+  link='#'
 }) => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
   return (
@@ -55,14 +58,21 @@ const CourseSection = ({
         </div>
 
         <div>
-          <BuyCard image={cardImage} cardPoints={cardPoints} inView={inView} />
+          <BuyCard
+            image={cardImage}
+            cardPoints={cardPoints}
+            inView={inView}
+            type={type}
+            price={price}
+            link={link}
+          />
         </div>
       </div>
     </div>
   );
 };
 
-const BuyCard = ({ image, cardPoints, inView }) => {
+const BuyCard = ({ image, cardPoints, inView, type, price, link }) => {
   return (
     <div
       className={`p-4 rounded-lg shadow-lg space-y-2 border w-[350px] mb:w-full ${
@@ -70,10 +80,16 @@ const BuyCard = ({ image, cardPoints, inView }) => {
       }`}
     >
       <Image src={image} className="w-[350px] mb:w-[330px]" />
-      <p className="text-lg font-semibold text-primary">₹ 1200</p>
-      <button className="w-full bg-primary py-2 text-white rounded-lg">
-        Buy Now
-      </button>
+      {type === "buy" && (
+        <p className="text-lg font-semibold text-primary">₹ {price}</p>
+      )}
+      <a
+        className="w-full bg-primary py-2 text-white rounded-lg block text-center cursor-pointer"
+        href={link}
+        target="_blank"
+      >
+        {type === "buy" ? "Buy Now" : "Join Now"}
+      </a>
       <div className="px-1 py-2 space-y-1">
         {cardPoints.map((item, index) => (
           <div className="flex space-x-2 items-center text-[15px]" key={index}>

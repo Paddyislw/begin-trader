@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ContactUsSection = () => {
@@ -14,9 +15,11 @@ const ContactUsSection = () => {
           Lets Start a Projects Together
         </p>
       </div>
-      <button className="bg-primaryDark px-4 py-2 text-white mx-auto flex rounded-lg">
-        Contact Us
-      </button>
+      <Link href={'/contactUs'} className="mt-2 block">
+        <button className="bg-primaryDark px-4 py-2 text-white mx-auto flex rounded-lg">
+          Contact Us
+        </button>
+      </Link>
     </div>
   );
 };

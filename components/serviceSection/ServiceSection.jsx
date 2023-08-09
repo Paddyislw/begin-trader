@@ -14,6 +14,8 @@ const ServiceSection = () => {
         highlights={highlightsOfBasis}
         cardImage={telegram}
         cardPoints={CardDetailsPremium}
+        type="join"
+        link="https://cosmofeed.com/vig/64c8fca04a0312001fa7d2f7?referralCode=cAwQIa&source=whatsapp&referralType=affiliateReferral"
       />
       <CourseSection
         heading={"Begin_Trader Telegram Group"}
@@ -21,6 +23,8 @@ const ServiceSection = () => {
         highlights={highlightsOfPremium}
         cardImage={telegram}
         cardPoints={CardDetails}
+        type="join"
+        link="https://cosmofeed.com/vig/64c8fca04a0312001fa7d2f7?referralCode=cAwQIa&source=whatsapp&referralType=affiliateReferral"
       />
     </>
   );

@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import FundamentalStockMarket from "../../utils/images/fundamentalsStockMarket.png";
 import OptionsExpertise from "../../utils/images/optionsExpertise.png";
+import Link from "next/link";
 
 const CoursesSection = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -60,9 +61,9 @@ const CourseCard = ({
           ))}
         </ul>
         {/* <p className="text-sm text-gray-600">{des}</p> */}
-        <button className="bg-primary text-white py-2 px-4 rounded-lg">
+        <Link className="bg-primary text-white py-2 px-4 rounded-lg block mt-2 w-fit" href={'/courses'}>
           Read More
-        </button>
+        </Link>
       </div>
     </div>
   );
