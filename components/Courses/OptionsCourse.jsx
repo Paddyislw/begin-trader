@@ -13,6 +13,7 @@ const OptionsCourse = () => {
       cardImage={OptionsExpertise}
       cardPoints={CardDetails}
       link="https://cosmofeed.com/vp/64d3298dd21eda001ea9c5ba"
+      price={'9999'}
     />
   );
 };
