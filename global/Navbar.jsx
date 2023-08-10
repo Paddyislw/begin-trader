@@ -3,6 +3,7 @@ import Link from "next/link";
 import Logo from "../utils/icons/logowithoutname.png";
 import Image from "next/image";
 import menu from "../utils/svg/menu.svg";
+import menuBlack from "../utils/svg/menuBlack.svg";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -16,7 +17,7 @@ const Navbar = ({ color = "white", className, navType = "navBtn" }) => {
     >
       <Link href={"/"}>
         <div className="flex items-center space-x-2">
-          <Image src={Logo} alt="" className="w-16" />
+          <Image src={Logo} alt="Image by Freepik" className="w-16" />
           <p>Begin Trader</p>
         </div>
       </Link>
@@ -62,7 +63,7 @@ const Navbar = ({ color = "white", className, navType = "navBtn" }) => {
       </div>
       <div className="hidden sm:block relative">
         <Image
-          src={menu}
+          src={color === "white" ? menu : menuBlack}
           className="w-6"
           onClick={() => setShowDropDown((prev) => !prev)}
         />

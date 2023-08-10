@@ -51,7 +51,7 @@ const CourseCard = ({
         inView ? className : "notVisible"
       }`}
     >
-      <Image src={image} />
+      <Image src={image} alt="Image by Freepik"/>
       <div className="p-4 space-y-2 mt-2 mb-2">
         <p className="text-primary font-semibold text-sm">{subTitle}</p>
         <p className="text-primaryDark font-semibold">{title}</p>

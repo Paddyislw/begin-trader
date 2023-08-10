@@ -16,7 +16,8 @@ const CourseSection = ({
   cardTitle,
   type = "buy",
   price,
-  link='#'
+  link = "#",
+  cardImageAlt="",
 }) => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
   return (
@@ -65,6 +66,7 @@ const CourseSection = ({
             type={type}
             price={price}
             link={link}
+            cardImageAlt={cardImageAlt}
           />
         </div>
       </div>
@@ -72,14 +74,26 @@ const CourseSection = ({
   );
 };
 
-const BuyCard = ({ image, cardPoints, inView, type, price, link }) => {
+const BuyCard = ({
+  image,
+  cardPoints,
+  inView,
+  type,
+  price,
+  link,
+  cardImageAlt,
+}) => {
   return (
     <div
       className={`p-4 rounded-lg shadow-lg space-y-2 border w-[350px] mb:w-full ${
         inView ? "animate-scale leafBox-4" : "notVisible"
       }`}
     >
-      <Image src={image} className="w-[350px] mb:w-[330px]" />
+      <Image
+        src={image}
+        className="w-[350px] mb:w-[330px]"
+        alt={cardImageAlt}
+      />
       {type === "buy" && (
         <p className="text-lg font-semibold text-primary">₹ {price}</p>
       )}

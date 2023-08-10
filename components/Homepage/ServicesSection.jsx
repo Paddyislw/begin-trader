@@ -54,7 +54,7 @@ const Card = ({ heading, des, icon, number, className, inView, alt }) => {
         inView ? className : "notVisible"
       }`}
     >
-      <Image src={icon} className="w-14 mb-2 object-contain" />
+      <Image src={icon} className="w-14 mb-2 object-contain" alt="Image by Freepik"/>
       <div className="space-y-3">
         <p className="text-center text-gray-600 ">{number}</p>
         <p className="text-center text-lg font-semibold">{heading}</p>

@@ -9,7 +9,7 @@ const Footer = () => {
     <div className={`${layout} flex justify-between py-24 sm:grid sm:grid-cols-2 sm:justify-items-center sm: gap-4 `}>
       <div>
         <div className="flex items-center mb-2">
-          <Image src={logo} className="w-14 mb:w-10" />
+          <Image src={logo} className="w-14 mb:w-10" alt="Image by Freepik"/>
           <p className="mb:text-sm">Begin Trader</p>
         </div>
         <p className="text-gray-600 text-sm mb:text-xs text-center">The art<br className="hidden mb:block"/> of trading</p>

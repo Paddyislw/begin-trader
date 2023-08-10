@@ -33,6 +33,7 @@ const ContactUs = () => {
             className={`w-[500px] lg: lg:w-[400px] md:w-[300px] sm:w-[400px]  ${
               inView ? "animate-pop-in-down leafBox-1" : "notVisible"
             }`}
+            alt="Work illustrations by Storyset"
           />
           <div className="grid grid-cols-2 justify-items-center gap-4 text-primaryDark">
             {ContactUsData.map((item) => (
@@ -44,7 +45,7 @@ const ContactUs = () => {
                 href={item.link}
                 target="_blank"
               >
-                <Image src={item.icon} className="w-[22px] mx-3" />
+                <Image src={item.icon} className="w-[22px] mx-3"  alt=""/>
                 <p className="grow text-left ">{item.title}</p>
               </a>
             ))}

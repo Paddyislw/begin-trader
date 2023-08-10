@@ -34,6 +34,7 @@ const FAQsection = () => {
           className={`w-[500px] xl:w-[450px] lg:w-[400px] mb:w-[360px] ${
             inView ? "animate-scale isVisible " : "notVisible"
           }`}
+          alt="Image by Freepik"
         />
       </div>
     </div>

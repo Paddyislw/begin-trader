@@ -26,6 +26,7 @@ const KeyFeaturesSection = () => {
             key={item.text}
             className={item.className}
             inView={inView}
+            alt={item.alt}
           />
         ))}
       </div>
@@ -58,7 +59,7 @@ const KeyFeaturesSection = () => {
   );
 };
 
-const Card = ({ icon, text, className, inView }) => {
+const Card = ({ icon, text, className, inView ,alt}) => {
   return (
     <div
       className={`w-[200px] h-[200px] border rounded-lg shadow-lg flex-col flex items-center justify-center space-y-6 mb:w-[170px] mb:h-[170px] ${
@@ -68,6 +69,7 @@ const Card = ({ icon, text, className, inView }) => {
       <Image
         src={icon}
         className="w-14 mx-auto bg-primaryLight rounded-t-full rounded-br-full p-2"
+        alt={alt}
       />
       <p className="text-base text-primaryDark font-semibold text-center mb:text-base">
         {text}
@@ -81,18 +83,26 @@ const CardData = [
     icon: innovative,
     text: "Innovative Solutions",
     className: "animate-scale leafBox-1",
+    alt: "Icon by manshagraphics",
   },
   {
     icon: assistance,
     text: "Market Assistance",
     className: "animate-scale leafBox-2",
+    alt: "Icon by surang",
   },
   {
     icon: team,
     text: "Professional Team",
     className: "animate-scale leafBox-3",
+    alt: "Icon by Iconjam",
   },
-  { icon: calling, text: "Fast Calling", className: "animate-scale leafBox-4" },
+  {
+    icon: calling,
+    text: "Fast Calling",
+    className: "animate-scale leafBox-4",
+    alt: "Icon by dickprayuda",
+  },
 ];
 
 export default KeyFeaturesSection;
