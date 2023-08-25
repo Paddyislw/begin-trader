@@ -25,7 +25,7 @@ const ServiceSection = () => {
         cardImage={telegram}
         cardPoints={CardDetails}
         type="join"
-        link="https://t.me/begin_trader"
+        link="https://telegram.me/begin_trader"
         cardImageAlt="Image by Freepik"
       />
     </>
