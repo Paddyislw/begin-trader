@@ -6,7 +6,7 @@ import React from "react";
 
 const Service = () => {
   return (
-    <div className="mb-[300px]">
+    <div className="mb-10">
       <Navbar
         color="black"
         className={`${layout} pt-6 pb-4 bg-gray-100 shadow-lg border-b`}
