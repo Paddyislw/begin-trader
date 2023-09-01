@@ -49,6 +49,15 @@ const Navbar = ({ color = "white", className, navType = "navBtn" }) => {
             Testimonial
           </button>
         </Link>
+        <Link href={"/services"}>
+          <button
+            className={`cursor-pointer ${navType} ${
+              path === "/services" && "text-primary font-semibold"
+            }`}
+          >
+            Services
+          </button>
+        </Link>
       </div>
       <div className="sm:hidden">
         <Link href={"/contactUs"}>
@@ -80,6 +89,9 @@ const Navbar = ({ color = "white", className, navType = "navBtn" }) => {
             </Link>
             <Link href={"/contactUs"}>
               <p className="py-2">Contact Us</p>
+            </Link>
+            <Link href={"/services"}>
+              <p className="py-2">Services</p>
             </Link>
           </div>
         )}
