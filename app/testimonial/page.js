@@ -1,9 +1,12 @@
 import PerformanceTable from "@/components/Testimonial/PerformanceTable";
+import ExcelTable from "@/components/excelTable/ExcelTable";
 import Heading from "@/global/Heading";
 import Navbar from "@/global/Navbar";
 import { layout } from "@/utils/Classnames";
 import Image from "next/image";
 import React from "react";
+import data1 from "../../utils/Aug1To31Index.json";
+import data2 from "../../utils/Aug1To31Option.json";
 
 const Testimonial = () => {
   return (
@@ -14,9 +17,23 @@ const Testimonial = () => {
         navType="navBtnGreen"
       />
       <div className="my-10">
-        <p className="text-primary font-semibold text-4xl text-center mb-6 sm:text-3xl mb:text-2xl">Performance Table</p>
-        <div className="justify-items-center flex  justify-center">
+        <p className="text-primary font-semibold text-4xl text-center mb-6 sm:text-3xl mb:text-2xl">
+          Performance Table
+        </p>
+        <div className="justify-items-center flex  justify-center flex-col space-y-8 items-center">
           <PerformanceTable />
+          <div className="px-1">
+            <p className="mb-2 text-xl font-semibold text-center">
+              Aug 1 to Aug 31 Premium index calls
+            </p>
+            <ExcelTable data={data1} />
+          </div>
+          <div className="px-1">
+            <p className="mb-2 text-xl font-semibold text-center">
+              Aug 1 to Aug 31 Stock Options Premium Calls
+            </p>
+            <ExcelTable data={data2} />
+          </div>
         </div>
       </div>
     </div>
