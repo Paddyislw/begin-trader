@@ -41,10 +41,10 @@ console.log('data..........',data)
               <td className="border border-gray-300 px-4 py-2 sm:px-2 mb:text-sm mb:px-1">
                 {item?.["Shares per lot"]}
               </td>
-              <td className="border border-gray-300 px-4 py-2 sm:px-2 mb:text-sm mb:px-1">
+              <td className={`border border-gray-300 px-4 py-2 sm:px-2 mb:text-sm mb:px-1 ${item?.["Minimum Profits"]>0?'text-green-500':'text-red-500'}`}>
                 {item?.["Minimum Profits"]}
               </td>
-              <td className="border border-gray-300 px-4 py-2 sm:px-2 mb:text-sm mb:px-1">
+              <td className={`border border-gray-300 px-4 py-2 sm:px-2 mb:text-sm mb:px-1 ${item?.["Maximum Profits"]>0?'text-green-500':'text-red-500'}`}>
                 {item?.["Maximum Profits"]?.toFixed(2)}
               </td>
               {/* <td
