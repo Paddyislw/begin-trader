@@ -1,7 +1,7 @@
 [
     {
      "S.no": 1,
-     "Stock Name ": "Ipca Labs",
+     "Stock Name": "Ipca Labs",
      "Strike Price": "890 ce",
      "Shares per lot": 650,
      "Entry": 37,
@@ -13,7 +13,7 @@
     },
     {
      "S.no": 2,
-     "Stock Name ": "sun pharma",
+     "Stock Name": "sun pharma",
      "Strike Price": "1160 ce",
      "Shares per lot": 700,
      "Entry": 38,
@@ -25,7 +25,7 @@
     },
     {
      "S.no": 3,
-     "Stock Name ": "manapuram",
+     "Stock Name": "manapuram",
      "Strike Price": "140 ce",
      "Shares per lot": 6000,
      "Entry": 7.5,
@@ -37,7 +37,7 @@
     },
     {
      "S.no": 4,
-     "Stock Name ": "Dr Reddy",
+     "Stock Name": "Dr Reddy",
      "Strike Price": "5800 ce",
      "Shares per lot": 125,
      "Entry": 160,
@@ -49,7 +49,7 @@
     },
     {
      "S.no": 5,
-     "Stock Name ": "india cements",
+     "Stock Name": "india cements",
      "Strike Price": "230 ce",
      "Shares per lot": 2900,
      "Entry": 12,
@@ -61,7 +61,7 @@
     },
     {
      "S.no": 6,
-     "Stock Name ": "Page industries",
+     "Stock Name": "Page industries",
      "Strike Price": "40000 pe",
      "Shares per lot": 15,
      "Entry": 620,
@@ -73,7 +73,7 @@
     },
     {
      "S.no": 7,
-     "Stock Name ": "Dixon",
+     "Stock Name": "Dixon",
      "Strike Price": "5000 ce",
      "Shares per lot": 200,
      "Entry": 175,
@@ -85,7 +85,7 @@
     },
     {
      "S.no": 8,
-     "Stock Name ": "NTPC",
+     "Stock Name": "NTPC",
      "Strike Price": "220 ce",
      "Shares per lot": 3000,
      "Entry": 2.5,
@@ -97,7 +97,7 @@
     },
     {
      "S.no": 9,
-     "Stock Name ": "Gmr Infra",
+     "Stock Name": "Gmr Infra",
      "Strike Price": "60 ce",
      "Shares per lot": 22500,
      "Entry": 1.4,
@@ -109,7 +109,7 @@
     },
     {
      "S.no": 10,
-     "Stock Name ": "Gmr Infra",
+     "Stock Name": "Gmr Infra",
      "Strike Price": "60 ce",
      "Shares per lot": 22500,
      "Entry": 2.2,
@@ -121,7 +121,7 @@
     },
     {
      "S.no": 11,
-     "Stock Name ": "Tata Chemicals ",
+     "Stock Name": "Tata Chemicals ",
      "Strike Price": "1100 ce",
      "Shares per lot": 550,
      "Entry": 30.5,
